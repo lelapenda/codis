@@ -58,7 +58,17 @@ in which,
 
 #3. Scripts execution order and explanation
 
-## 1 step - juntar.py 
+
+Please, be aware that you should revisit every python file so you can update with paths to your system, keep the structure of folders under /codis as it is. You can search for ### in code to know where you should add your path.
+
+Additionally in treinamento.py the code is set to run with threads, if you don't want it just comment the part between the sentence 'WITH PARALLEL PROCESSING' and 'WITHOUT PARALLEL PROCESSING' and uncomment the rest.
+
+## 1 step - criar_pastas_scores.sh
+
+This is a script to create the folders for each combination of parameter under a specified dataset name. E.g. /SVM-tf-cosseno, which stands for a folder where results for SVM, TF and Cosine Distance are stored.
+
+
+## 2 step - juntar-txt_call.py 
 
 This script has two main functions:
 
@@ -71,12 +81,12 @@ With a single joined file it is possible to count the total number os terms in b
 Every txt that belongs to the same fold should be joined. Ten files named 'fold x-junto.txt', where x is the fold number, are generated in this step.
 
 
-## 2 step - obter-quantidade-palavras.py
+## 3 step - obter_quantidade_palavras_call.py
 
 This script uses 'todos-juntos.txt', from 1 step, in order to execute the instructions to obtain the total number of terms in bag of words for each dataset - corpus. This information is useful to set a variable in training phase.
 
 
-## 3 step - run.sh
+## 4 step - run.sh
 
 This script will basically run every other script you need. You just have to set these parameters:
 
@@ -90,16 +100,16 @@ export Metric=euclidiana
 
 where,
 
-Base = name of dataset
+Base = dataset name
 L = L to be used
 W = number of words returned in previous step
-Classifier = wheter you want to use 'SVM' or 'AD' (Decision Tree)
+Classifier = whether you want to use 'SVM' or 'AD' (Decision Tree)
 Input = input format. Can be 'TF' or 'TFIDF'
 Metric = distance measure to compute dissimilarity matrices. Options are: 'euclidiana' or 'cosseno'
 
+Attention! You should update teste_call.sh with the number of terms for each fold as, in a dataset, some folds might have a few more terms than others.
 
-
-## Visualize accuracy measures
+## Visualize performance measures
 
 The files are stored under the folder [YOUR DATASET]/[YOUR CONFIGURATION OF PARAMETERS].  
 e.g. 'tr23/SVM-tf-cosseno', which means it was run on dataset 'tr23' with parameters 'SVM', 'TF' and 'Cosine Distance'.

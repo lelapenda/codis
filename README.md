@@ -2,11 +2,13 @@
 This repository contains the source code for CoDiS implementation in Python. Reference article: https://ieeexplore.ieee.org/document/8489287
 
 ---------------------
+
 Reference Article:
 
 L. V. N. Lapenda, R. H. W. Pinheiro and G. D. C. Cavalcanti, "An empirical analysis of Combined Dissimilarity Spaces," 2018 International Joint Conference on Neural Networks (IJCNN), Rio de Janeiro, 2018, pp. 1-8.
 doi: 10.1109/IJCNN.2018.8489287
 https://ieeexplore.ieee.org/document/8489287
+
 ---------------------
 
 

@@ -34,7 +34,7 @@ W = int(W)	#VARIABLE FOR DATASET - number of terms in bag of words for each data
 fold = int(fold)	#VARIABLE FOR EACH FOLD - currently fold being processed
 
 '''
-#in case you want to set the variables here instead of in the sh scripts
+#in case you want to set the variables here instead of in the sh scripts - useful for testing
 
 
 base="syskill"
@@ -69,7 +69,7 @@ model = []
 rs = [i for i in range(0,L*2)] #variable to be used in random_state. This variable has 200 numbers. When changing the number of random-state different subsets will be chosen. It has length L*2 due to the two resamples: Xs and Rs
 
 
-#---Reading and prepating file------------------
+#---Reading and preparing file------------------
 
 #output example for this step:
 #content: [ '3 31:6.000000 36:2.000000', '3 14:4.000000 28:2.000000' ]

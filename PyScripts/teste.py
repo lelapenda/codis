@@ -39,7 +39,7 @@ Q = int(Q)	#VARIABLE FOR EACH FOLD - obtained in treinamento.py: represents 20% 
 
 
 '''
-#in case you want to set the variables here instead of in the sh scripts
+#in case you want to set the variables here instead of in the sh scripts - useful for testing
 
 base="wap"
 L = 70

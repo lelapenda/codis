@@ -8,9 +8,10 @@ do
 	Fold=$i
 	printf "\n$i\n\n"
 
+	#update the number of terms for each fold below accordingly
 	if [ "$Fold" -eq "6" ];
 	then
-		Q=73		#update the number of terms accordingly
+		Q=73		
 	elif [ "$Fold" -eq "7" ];
 	then
 		Q=74

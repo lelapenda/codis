@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
 
-Base=syskill
+Base=tr23 #update with your dataset name
 
 python ../PyScripts/obter-quantidade-palavras.py $Base 

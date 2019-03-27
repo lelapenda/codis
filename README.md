@@ -16,7 +16,7 @@ https://ieeexplore.ieee.org/document/8489287
 
 ## Datasets
 
-In the folder `files`, you will find a sample dataset called `tr23`. The dataset has 10 txts called `teste1.txt, teste2.txt, ..., teste10.txt`. Each of these corresponds to a fold generated through cross-validation.
+In the folder `files`, you will find a sample dataset called `tr23`. The dataset has 10 txts called `teste1.txt, teste2.txt, ..., teste10.txt`. Each of these corresponds to a fold generated through cross-validation. The dataset was gathered from http://sites.labic.icmc.usp.br/text_collections/. 
 
 ### Dataset example:
 
